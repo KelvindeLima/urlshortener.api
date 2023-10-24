@@ -30,5 +30,3 @@ public class UrlRequest {
         this.operationTime = operationTime;
     }
 }
-
-//pensar em colocar o Alias (Como eu coloco isso, meu pai

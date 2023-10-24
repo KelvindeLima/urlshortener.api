@@ -21,7 +21,6 @@ public class UrlService {
     public String convertToShortUrl(UrlRequest request) {
         var url = new Url();
         url.setOriginalUrl(request.getOriginalUrl());
-        url.setOperationTime(request.getOperationTime());
         var entity = urlRepository.save(url);
         return conversion.encode(entity.getId());
 
@@ -33,7 +32,6 @@ public class UrlService {
 
         return entity.getOriginalUrl();
     }
-
 
 }
 

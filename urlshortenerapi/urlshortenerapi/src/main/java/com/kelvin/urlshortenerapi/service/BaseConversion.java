@@ -9,6 +9,7 @@ public class BaseConversion {
     private int base = allowedCharacters.length;
 
     public String encode(long input){
+
         var encodedString = new StringBuilder();
 
         if(input == 0) {
